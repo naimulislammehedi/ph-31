@@ -15,9 +15,35 @@ function App() {
     <Person></Person>
     <Developer name="Mozumder" tech="JS"></Developer>
     <Developer name="Razon" tech="Python"></Developer>
+    <Player name="tamim" runs="5000"></Player>
+    <Player name="mushi" runs="5000"></Player>
+    <Salami event="Roja Eid" amount="1000"></Salami>
     </>
   )
 }
+
+function Salami({event, amount = 0}) {
+  return (
+    <div className="student">
+      <p>Salamir for: {event}</p>
+      <p>Amount: {amount}</p>
+    </div>
+  )
+}
+
+// const {name, runs} = {name: 'tamim', runs: '5000'}
+function Player({name, runs}) {
+  // console.log(props); 
+  return (
+    <div className="student">
+    <h3>Name: {name} </h3>
+    <p>Runs: {runs}</p>
+
+    </div>
+  )
+}
+
+// const {name, tech} = {name: 'Razon', tech: 'Python'}
 
 function Developer(props) {
   console.log(props)
