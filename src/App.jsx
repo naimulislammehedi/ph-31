@@ -3,21 +3,26 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import ToDo from './Todo'; 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+  const time = 50; 
 
   return (
     <>
     <h1>React Core Concepts</h1>
-    <Student></Student>
+    <ToDo task="Learn React" isDone={true} time={time}></ToDo>
+    <ToDo task="Revise JS" isDone={false}></ToDo>
+    <ToDo task="Take a shower" isDone={false} time="100"></ToDo>
+    {/* <Student></Student>
     <Student></Student>
     <Person></Person>
     <Developer name="Mozumder" tech="JS"></Developer>
     <Developer name="Razon" tech="Python"></Developer>
     <Player name="tamim" runs="5000"></Player>
     <Player name="mushi" runs="5000"></Player>
-    <Salami event="Roja Eid" amount="1000"></Salami>
+    <Salami event="Roja Eid" amount="1000"></Salami> */}
     </>
   )
 }
